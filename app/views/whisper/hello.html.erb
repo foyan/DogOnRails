@@ -1,0 +1,16 @@
+<h1>Rails is whispering "Hello"....</h1>
+<p>
+	Beim nächsten Ton ist es : <%= Time.now %>
+</p>
+
+<h2>Files</h2>
+
+<ul>
+	<% for file in @files %>
+		<li><%= file %></li>
+	<% end %>
+</ul>
+
+<p>
+	<%= link_to "Go away!", whisper_goodbye_path %>
+</p>
