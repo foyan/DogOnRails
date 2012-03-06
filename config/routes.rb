@@ -1,4 +1,6 @@
 DogOnRails::Application.routes.draw do
+  resources :products
+
   get "whisper/hello"
 
   get "whisper/goodbye"
