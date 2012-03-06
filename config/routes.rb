@@ -4,7 +4,7 @@ DogOnRails::Application.routes.draw do
   get "whisper/hello"
 
   get "whisper/goodbye"
-
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
