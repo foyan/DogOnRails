@@ -18,6 +18,7 @@ class ProductsControllerTest < ActionController::TestCase
 
   test "should create product" do
     assert_difference('Product.count') do
+      @product.title = "Gugus"
       post :create, product: @product.attributes
     end
 
