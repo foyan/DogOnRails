@@ -8,9 +8,17 @@
 </head>
 <body>
 
+<div id="biltli" style="float:left;">
 <%= image_tag("dogonrails.jpg") %>
+</div>
+<div style="float:left;">
+	Consumption Kid's current achievements:
+	<div id="cart"><%= render @cart %></div>
+</div>
 
-<%= yield %>
+<div id="main" style="clear: both">
+	<%= yield %>
+</div>
 
 </body>
 </html>

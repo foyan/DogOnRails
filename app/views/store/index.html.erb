@@ -11,7 +11,7 @@
 		</p>
 		<div class="price_line" >
 			<span class="price" ><%= number_to_currency(product.price) %></span>
-			<%= button_to 'Me buy this.', line_items_path(:product_id => product) %>
+			<%= button_to 'Me buy this.', line_items_path(:product_id => product), :remote => true %>
 		</div>
 	</div>
 <% end %>

@@ -1,0 +1,7 @@
+<p id="notice"><%= notice %></p>
+
+<ul>
+<%= render(cart.line_items) %>
+</ul>
+So viel: <%= number_to_currency(cart.total_price) %>
+<%= button_to 'Stop shopping', cart, :method => :delete, :confirm => 'Are you sure?' %>
